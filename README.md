@@ -1,6 +1,6 @@
 # Code Samples
 
-Three scripts that are a part of a Flask website built to help traders manage risk in derivitives trading. The first script **_oi_to_db_.py** downloads and formats open interest data (once a day on scheduler) for CME futures and stores it in a database for other apps to use. The next two scripts **_algo.py_** and **_summary.py_** are related to each other. The former is a tool to create and test trading logic for each contract while the latter summarizes these data files into categories to
+Three scripts are a part of a Flask website built to help traders manage risk in derivitives trading. The first script, **_oi_to_db_.py** downloads and formats open interest data (once a day on scheduler) for CME futures and stores it in a database for other apps to use. The next two scripts **_algo.py_** and **_summary.py_** are related to each other. The former is a tool to create and test trading logic for each contract while the latter summarizes these data files into categories to
 ensure that they are properly monitored.
 The main tools used are Python, Flask, Plotly Dash, SQLAlachemy, Celery.
 
@@ -19,7 +19,7 @@ This lists files in descending order of timestamp, upto 10 days.
 - **Position On/Missing Algo**
 This list keeps track of contracts which are currently being traded but do not have a defined trading strategy.
 - **Algo Exists/No Position On**
-This list keeps track of contracts for which trading strategy has been defined but there it is not currently being traded.
+This list keeps track of contracts for which trading strategy has been defined but it is not currently being traded.
 - **Position On/Incomplete Algo**
 This lists files for which there is logic defined but it is incomplete. Only lists contracts which are currently being traded.
 
@@ -27,7 +27,7 @@ This lists files for which there is logic defined but it is incomplete. Only lis
 
 This script defines an interactive Dash app with various HTML components. The HTML layout is defined by a Dash app and callbacks are used to take care of interactions with the components. The purpose of this tool is to define trading logic for adding on a position as well as unwinding that position, based on the parameters set by the end user.
 
-A lot of the logic is hidden in this script as it is proprietary.
+This script mainly shows the architecture of the app. A lot of the logic is hidden in this script as it is proprietary.
 
 The app structure is as follows:
 1) **HTML layout**
